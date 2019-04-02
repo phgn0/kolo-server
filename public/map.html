@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>map</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <script src="map.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDM8asilB92fHrhk5qsn7DcJhfJFfHYrZM&callback=initMap">
+        </script>
+        
+        <style>
+          body {
+            position: relative;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+          }
+          #map {
+            position: relative;
+            top: 300px;
+            border: 3px solid #73AD21;
+            width: 50%;
+            height: 500px;
+            margin: auto;
+          }
+        </style>
+    </head>
+
+    <body>
+      <p>test</p>
+      
+      <form id="search">
+        stadt: <input type="text" name="city"><br>
+        <button type='button' onclick="interpretSearch()">search</button>
+      </form>
+      
+      <div id="map"></div>
+    
+  </body>
+</html>

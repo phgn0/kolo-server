@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>insert test data</title>
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta charset="utf-8">
+        
+        <script src="insert.js"></script>
+        
+        <style>
+          body {
+            position: relative;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+          }
+        </style>
+    </head>
+
+    <body>
+      <form id="point">
+        name: <input type="text" name="point_name"><br>
+        location: <input type="text" name="point_loc_x">
+        <input type="text" name="point_loc_y"><br>
+        <button type='button' onclick="insert_point()">send</button>
+      </form>
+      <br>
+      <p>interval settings:</p>
+      <form id="interval">
+        iterations: <input type="number" name="iterationsx"><input type="number" name="iterationsy"><br>
+        location offset: <input type="text" name="offset_loc_x">
+        <input type="text" name="offset_loc_y"><br>
+        <button type='button' onclick="insert_interval()">send</button>
+      </form>
+      <br><br>
+      <div id="output"> </div>
+  </body>
+</html>
